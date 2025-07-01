@@ -1,9 +1,16 @@
 ---
-erstellt: 2025-06-30T17:18
-geändert: 2025-06-30T18:20
+title: Paperless-NGX als Docker-Setup auf meinem Server
+description: Mein Setup für Dokumentenerfassung, OCR, Telegram-Bot und semantische Suche
+created: 2025-06-30
+updated: 2025-06-30
+author: Dr. Michi Hailer
+tags:
+  - Paperless-NGX
+  - Docker
+  - OCR
+  - Backup
+  - Dokumentenmanagement
 ---
-# Paperless-NGX als Docker-Setup auf meinem Server
-
 
 ---
 
@@ -27,7 +34,6 @@ http://192.168.178.111:8000
 
 ## 📦 Ordnerstruktur auf dem Host
 
-
 /home/docker/paperless/
 ├── data/              # Dokumente & OCR
 ├── media/             # Uploads & Thumbnails
@@ -37,7 +43,7 @@ http://192.168.178.111:8000
 └── docker-compose.yml
 
   ---
-  
+
 ## 🧠 OCR & Verarbeitung
 
 - Eingehende PDFs (per Scanner oder Bot) landen in consume/
@@ -56,6 +62,7 @@ Ich nutze einen Telegram-Bot, um
 - per telegram-send Status zu erhalten
 
 ---
+
 ## 🔁 Automatisierung
 
 - Tägliches borg-Backup (Daten + DB)
