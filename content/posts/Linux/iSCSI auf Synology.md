@@ -1,10 +1,10 @@
----
-erstellt: 2025-06-30T17:47
-geändert: 2025-06-30T18:20
----
-# 🛡️ iSCSI-Backup mit Synology NAS, Timeshift und rsync (Linux)
+ 
 
-Dieses Dokument beschreibt **Schritt für Schritt**, wie ein iSCSI-Laufwerk auf einer **Synology NAS** erstellt, formatiert, gemountet und anschließend mit **Timeshift** und **rsync** als Backupziel genutzt wird.
+---
+title: "Python-Umgebungen im Vergleich"
+date: 2025-07-01T10:20:00
+draft: false
+tags: ["Python", "Entwicklung", "Conda"]
 
 ---
 
@@ -25,7 +25,7 @@ Dieses Dokument beschreibt **Schritt für Schritt**, wie ein iSCSI-Laufwerk auf 
 3. Klicke auf **Erstellen** und wähle:
    - **Name**: z. B. `backup-target`
    - **IQN** (automatisch generiert oder `iqn.2025-06.local.synology:backup`)
-1. Aktiviere das Ziel, aber belasse es **ohne LUN** (wird im Anschluss erstellt).
+4. Aktiviere das Ziel, aber belasse es **ohne LUN** (wird im Anschluss erstellt).
 
 ---
 
@@ -177,4 +177,5 @@ systemctl --user enable --now backup-notebook.timer
 Mit dieser Konfiguration ist dein System **sicher**, die **Backups laufen automatisiert** und das iSCSI-Target bleibt **zentral und flexibel erweiterbar** auf deiner Synology NAS.
 
 ---
+
 mit ❤️ zusammengestellt und programmiert von Michael 

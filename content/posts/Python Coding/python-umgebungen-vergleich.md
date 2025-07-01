@@ -1,3 +1,18 @@
+---
+title: Python-Umgebungen im Vergleich – venv, conda, pipx und Poetry
+description: Eine praktische Gegenüberstellung von venv, conda, pipx und Poetry mit Empfehlungen für verschiedene Einsatzzwecke
+created: 2025-06-30
+updated: 2025-06-30
+author: Dr. Michi Hailer
+tags:
+  - Python
+  - venv
+  - conda
+  - pipx
+  - poetry
+  - Entwicklungsumgebungen
+---
+
 # Python-Umgebungen: Miniconda, Mamba, Anaconda und venv im Vergleich
 
 Moderne Python-Projekte arbeiten fast immer mit virtuellen Umgebungen. Wer komplexe Software isoliert installieren und verwalten möchte, kommt an Tools wie `Miniconda`, `Anaconda`, `mamba` oder `venv` nicht vorbei.
@@ -122,23 +137,23 @@ pip install numpy pandas
 
 ## Vergleichstabelle <a name="vergleich"></a>
 
-| Tool       | Größe     | Geschwindigkeit | GUI verfügbar | Paket-Management | Systemabhängige Pakete |
-|------------|-----------|------------------|----------------|-------------------|-------------------------|
-| Miniconda  | 🟢 klein   | ⚪ mittel         | ⚪ optional     | ✅ conda + pip     | ✅                      |
-| Mamba      | 🟢 klein   | 🟢 sehr schnell   | ⚪ optional     | ✅ conda-kompatibel | ✅                      |
-| Anaconda   | 🔴 sehr groß | ⚪ mittel       | ✅ ja           | ✅ conda + pip     | ✅                      |
-| venv       | 🟢 winzig  | 🟢 schnell        | ❌ nein         | ❌ nur pip         | ❌                      |
+| Tool      | Größe        | Geschwindigkeit | GUI verfügbar | Paket-Management   | Systemabhängige Pakete |
+| --------- | ------------ | --------------- | ------------- | ------------------ | ---------------------- |
+| Miniconda | 🟢 klein     | ⚪ mittel        | ⚪ optional    | ✅ conda + pip      | ✅                      |
+| Mamba     | 🟢 klein     | 🟢 sehr schnell | ⚪ optional    | ✅ conda-kompatibel | ✅                      |
+| Anaconda  | 🔴 sehr groß | ⚪ mittel        | ✅ ja          | ✅ conda + pip      | ✅                      |
+| venv      | 🟢 winzig    | 🟢 schnell      | ❌ nein        | ❌ nur pip          | ❌                      |
 
 ---
 
 ## Empfehlung <a name="empfehlung"></a>
 
-| Zielgruppe                   | Empfehlung               |
-|-----------------------------|--------------------------|
-| Einsteiger & Data Science   | Miniconda + Mamba        |
-| Fortgeschrittene Entwickler | Miniconda + Mamba        |
-| Minimalistische Projekte    | venv + pip               |
-| Komplette Python-Suite      | Anaconda (nur bei Bedarf)|
+| Zielgruppe                  | Empfehlung                |
+| --------------------------- | ------------------------- |
+| Einsteiger & Data Science   | Miniconda + Mamba         |
+| Fortgeschrittene Entwickler | Miniconda + Mamba         |
+| Minimalistische Projekte    | venv + pip                |
+| Komplette Python-Suite      | Anaconda (nur bei Bedarf) |
 
 ---
 
