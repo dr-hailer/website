@@ -1,0 +1,24 @@
+{{ $pages := where .Site.RegularPages "Section" "posts" | first 10 }}
+
+<ul style="list-style: none; padding: 0">
+  {{ range $pages }}
+  <li
+    style="
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #f9f9f9;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    "
+  >
+    <h2 style="margin-top: 0">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    <p style="color: #666">{{ .Summary }}</p>
+    <small style="color: #999"
+      >{{ .Date.Format "02.01.2006" }} · {{ .ReadingTime }} Minuten
+      Lesezeit</small
+    >
+  </li>
+  {{ end }}
+</ul>
