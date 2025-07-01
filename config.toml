@@ -1,0 +1,24 @@
+baseURL = "https://drmichaelh.netlify.app/"
+languageCode = "de-de"
+title = "Website"
+theme = "papermod"
+defaultContentLanguage = "de"
+
+[params]
+  env = "production"
+  defaultTheme = "light"
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = true
+  hideFooter = false
+  DateFormat = "02.01.2006"
+
+[languages]
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 1
+
+[pagination]
+  pagerSize = 10
